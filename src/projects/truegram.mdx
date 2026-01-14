@@ -23,6 +23,7 @@ TrueGram halts the psychological drain of endless scrolling and cultivates digit
 
 <Video
     src="/videos/truegram_case.mp4"
+    poster="/png/truegram_heroThumbnail.png"
     caption="TrueGram casefilm introducing the problem, goal and solution of the project."
 />
 
@@ -56,6 +57,7 @@ TrueGram's design goal is to make being online feel calm, easy, and empowering. 
 
 <Video
     src="/png/truegram_board.jpg"
+    poster="/png/truegram_heroThumbnail.png"
     caption="Overview of TrueGram's core functionalities: Intent Selection, Notification Bundles, and Wellbeing Check-ins."
 />
 
@@ -67,76 +69,96 @@ TrueGram's design goal is to make being online feel calm, easy, and empowering. 
 
 ## Systemic Journey Map
 
-<Table
-    headers={[
-        "Primary Challenge & Trigger",
-        "Awareness & Initial Interest",
-        "Consideration & Decision",
-        "Onboarding",
-        "Usage",
-        "Retention & Growth"
-    ]}
-    rows={[
-        [
-            "User Actions / Core Activity",
-            "Users intend to be mindful but get trapped in endless, draining feeds, losing connection to their original purpose.",
-            "Discover app via word-of-mouth or App Store recommendations. Interested in mindful usage.",
-            "Weigh options, compare features, assess setup time, decide on TrueGram.",
-            "Create account, set privacy/safety, set intentions, explore app/tutorial.",
-            "Select intent (e.g., 'Catch Up') for limited session; meaningful reactions; bundled notifications.",
-            "Habitual intentional sessions; uses bundles/check-ins; recommends app to friends."
-        ],
-        [
-            "User Goals",
-            "Maintain connection without losing time or emotional control. Seek a healthy, intentional space free from guilt.",
-            "Quickly understand value proposition without effort; decide if it's worth remembering.",
-            "Fewer distractions, predictable screen time, better sleep, ethical defaults, high-quality content.",
-            "Establish purpose, understand mindful support, feel grounded and empowered.",
-            "Stay connected without scrolling trap; control time; leave satisfied/energized.",
-            "Sustainable positive effects (focus, sleep); stable/respectful community; values-aligned app growth."
-        ],
-        [
-            "Pain Points / Needs",
-            "Overwhelmed by content overload and addictive cycles. Need non-manipulative tools that support healthy habits.",
-            "Overwhelmed by new apps. Need simple, clear message on core purpose/why it exists.",
-            "Fear of FOMO/losing reach. Need easy onboarding, contact import, simple visual settings.",
-            "Overwhelmed by cognitive demand. Need clear, non-overwhelming support and value explanation.",
-            "Struggle with old habits and FOMO. Need reassurance to stop.",
-            "Fear of old habits returning. Need non-guilt reminders."
-        ],
-        [
-            "Gains",
-            "Awareness of overload's impact; feeling hope and control from recognizing distinct, healthier digital habits.",
-            "Passively learn a healthier alternative exists: relief and curiosity.",
-            "Planned sessions, less doomscrolling, improved focus, values-based community, trust, calmer mood.",
-            "Control over environment, protection from pressure, trust in well-being focus.",
-            "Reclaimed 1-2 daily hours, relief/clarity, agency/pride, authentic interactions.",
-            "Long-term shift in digital relation, pride in healthy habits, TrueGram becomes default healthy space."
-        ],
-        [
-            "Environmental Impact",
-            "Reduces massive energy waste caused by addictive, endless scrolling loops.",
-            "Minimal footprint: brief data usage only for app exposure.",
-            "Lowers energy consumption via media optimization and Dark Mode defaults.",
-            "Energy usage for profile creation; optimized onboarding reduces digital waste.",
-            "Cuts carbon footprint significantly by eliminating endless video scrolling.",
-            "Reduces per-user energy intensity through finite, intentional sessions."
-        ],
-        [
-            "Social Impact",
-            "Protects neurodivergent users excluded by overwhelming, addictive designs.",
-            "Raises awareness that social media can be non-addictive and healthy.",
-            "Democratizes access to privacy and inclusive design standards.",
-            "Sets new norms for respectful, non-exploitative digital onboarding.",
-            "Reduces toxic engagement: fosters safer, more authentic communities.",
-            "Shifts industry standard to 'Digital Wellbeing'."
-        ]
-    ]}
-/>
-
-
-
-
+<div className="overflow-x-auto my-6">
+    <table className="w-full table-fixed min-w-[1400px] border border-surface-border text-sm">
+        <thead className="bg-surface/80">
+            <tr>
+                <th className="w-[14.28%] px-4 py-3 border border-surface-border"></th>
+                {[
+                    "Primary Challenge & Trigger",
+                    "Awareness & Initial Interest",
+                    "Consideration & Decision",
+                    "Onboarding",
+                    "Usage",
+                    "Retention & Growth",
+                ].map((header, i) => (
+                    <th key={i} className="w-[14.28%] px-4 py-3 text-left font-semibold text-surface-fg border border-surface-border">
+                        {header}
+                    </th>
+                ))}
+            </tr>
+        </thead>
+        <tbody>
+            {[
+                [
+                    "User Actions / Core Activity",
+                    "Users intend to be mindful but get trapped in endless, draining feeds, losing connection to their original purpose.",
+                    "Discover app via word-of-mouth or App Store recommendations. Interested in mindful usage.",
+                    "Weigh options, compare features, assess setup time, decide on TrueGram.",
+                    "Create account, set privacy/safety, set intentions, explore app/tutorial.",
+                    "Select intent (e.g., 'Catch Up') for limited session; meaningful reactions; bundled notifications.",
+                    "Habitual intentional sessions; uses bundles/check-ins; recommends app to friends."
+                ],
+                [
+                    "User Goals",
+                    "Maintain connection without losing time or emotional control. Seek a healthy, intentional space free from guilt.",
+                    "Quickly understand value proposition without effort; decide if it's worth remembering.",
+                    "Fewer distractions, predictable screen time, better sleep, ethical defaults, high-quality content.",
+                    "Establish purpose, understand mindful support, feel grounded and empowered.",
+                    "Stay connected without scrolling trap; control time; leave satisfied/energized.",
+                    "Sustainable positive effects (focus, sleep); stable/respectful community; values-aligned app growth."
+                ],
+                [
+                    "Pain Points / Needs",
+                    "Overwhelmed by content overload and addictive cycles. Need non-manipulative tools that support healthy habits.",
+                    "Overwhelmed by new apps. Need simple, clear message on core purpose/why it exists.",
+                    "Fear of FOMO/losing reach. Need easy onboarding, contact import, simple visual settings.",
+                    "Overwhelmed by cognitive demand. Need clear, non-overwhelming support and value explanation.",
+                    "Struggle with old habits and FOMO. Need reassurance to stop.",
+                    "Fear of old habits returning. Need non-guilt reminders."
+                ],
+                [
+                    "Gains",
+                    "Awareness of overload's impact; feeling hope and control from recognizing distinct, healthier digital habits.",
+                    "Passively learn a healthier alternative exists: relief and curiosity.",
+                    "Planned sessions, less doomscrolling, improved focus, values-based community, trust, calmer mood.",
+                    "Control over environment, protection from pressure, trust in well-being focus.",
+                    "Reclaimed 1-2 daily hours, relief/clarity, agency/pride, authentic interactions.",
+                    "Long-term shift in digital relation, pride in healthy habits, TrueGram becomes default healthy space."
+                ],
+                [
+                    "Environmental Impact",
+                    "Reduces massive energy waste caused by addictive, endless scrolling loops.",
+                    "Minimal footprint: brief data usage only for app exposure.",
+                    "Lowers energy consumption via media optimization and Dark Mode defaults.",
+                    "Energy usage for profile creation; optimized onboarding reduces digital waste.",
+                    "Cuts carbon footprint significantly by eliminating endless video scrolling.",
+                    "Reduces per-user energy intensity through finite, intentional sessions."
+                ],
+                [
+                    "Social Impact",
+                    "Protects neurodivergent users excluded by overwhelming, addictive designs.",
+                    "Raises awareness that social media can be non-addictive and healthy.",
+                    "Democratizes access to privacy and inclusive design standards.",
+                    "Sets new norms for respectful, non-exploitative digital onboarding.",
+                    "Reduces toxic engagement: fosters safer, more authentic communities.",
+                    "Shifts industry standard to 'Digital Wellbeing'."
+                ],
+            ].map((row, i) => (
+                <tr key={i}>
+                    <th className="px-4 py-4 text-left font-semibold text-surface-fg border border-surface-border align-top bg-surface/30">
+                        {row[0]}
+                    </th>
+                    {row.slice(1).map((cell, j) => (
+                        <td key={j} className="px-4 py-4 border border-surface-border text-text-muted align-top">
+                            {cell}
+                        </td>
+                    ))}
+                </tr>
+            ))}
+        </tbody>
+    </table>
+</div>
 
 ## Team
 
@@ -177,7 +199,7 @@ TrueGram's design goal is to make being online feel calm, easy, and empowering. 
             )
         },
         {
-            title: "Troy Rivers, [Study Program]",
+            title: "Troy Rivera, [Study Program]",
             body: (
                 <span>
                     • Creation and conductment of user survey<br/>
